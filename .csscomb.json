@@ -1,0 +1,47 @@
+{
+  "remove-empty-rulesets": true,
+  "always-semicolon": true,
+  "color-case": "lower",
+  "block-indent": "  ",
+  "color-shorthand": true,
+  "element-case": "lower",
+  "leading-zero": false,
+  "quotes": "single",
+  "sort-order-fallback": "abc",
+  "sort-order": [
+    [
+      "display",
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index"
+    ],
+    [
+      "width",
+      "min-width",
+      "max-width",
+      "height",
+      "min-height",
+      "max-height",
+      "margin",
+      "padding",
+      "border",
+      "box-sizing"
+    ],
+    [
+      "font-family",
+      "font-size",
+      "font-weight",
+      "line-height",
+      "color",
+      "text-align"
+    ],
+    [
+      "background",
+      "background-color",
+      "background-image"
+    ]
+  ]
+}
