@@ -31,9 +31,19 @@
       "box-sizing"
     ],
     [
+      "font",
       "font-family",
       "font-size",
       "font-weight",
+      "font-style",
+      "font-variant",
+      "font-size-adjust",
+      "font-stretch",
+      "font-effect",
+      "font-emphasize",
+      "font-emphasize-position",
+      "font-emphasize-style",
+      "font-smooth",
       "line-height",
       "color",
       "text-align"
