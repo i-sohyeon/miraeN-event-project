@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+:root {
+  --content-width: 75rem;
+
+  --main-pink: #FF8AAB;
+  --main-white: #FFFFFF;
+  --main-brown: #5A371E;
+  --chocopop_brown01: #5A371E;
+  --chocopop_brown02: #331D0A;
+  --chocopop_pink03: #FF8296;
+  --main-yellow: #FFFE8D;
+
+  --font-base: 'Pretendard';
+}
