@@ -6,12 +6,11 @@
   "color-shorthand": true,
   "element-case": "lower",
   "leading-zero": false,
-  "quotes": "single",
+  "quotes": "double",
   "sort-order-fallback": "abc",
   "sort-order": [
     [
       "content",
-
       "display",
       "flex",
       "flex-direction",
@@ -27,33 +26,28 @@
       "grid-template-rows",
       "grid-column",
       "grid-row",
-  
       "position",
       "top",
       "right",
       "bottom",
       "left",
       "z-index",
-  
       "width",
       "min-width",
       "max-width",
       "height",
       "min-height",
       "max-height",
-  
       "margin",
       "margin-top",
       "margin-right",
       "margin-bottom",
       "margin-left",
-  
       "padding",
       "padding-top",
       "padding-right",
       "padding-bottom",
       "padding-left",
-  
       "font",
       "font-family",
       "font-size",
@@ -68,35 +62,27 @@
       "white-space",
       "word-break",
       "word-wrap",
-  
       "color",
-  
       "background",
       "background-color",
       "background-image",
       "background-position",
       "background-repeat",
       "background-size",
-  
       "border",
       "border-width",
       "border-style",
       "border-color",
       "border-radius",
-  
       "box-shadow",
-  
       "overflow",
       "overflow-x",
       "overflow-y",
-  
       "opacity",
       "visibility",
-  
       "transform",
       "transition",
       "animation",
-  
       "cursor",
       "pointer-events",
       "user-select"

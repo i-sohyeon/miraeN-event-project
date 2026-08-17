@@ -95,7 +95,7 @@ html {
   text-align: center;
   }
 .navi ul li a {
-  border: 0.125rem solid #fff;
+  border: .125rem solid #fff;
   }
 .navi ul li a:hover {
   background: #eee;
@@ -103,7 +103,7 @@ html {
 .navi ul li a.active {
   color: var(--main-white);
   background: #ff9fba;
-  border: 0.125rem solid #ff8aab;
+  border: .125rem solid #ff8aab;
   }
 
 .navi ul li:first-child a{
@@ -111,7 +111,7 @@ html {
   }
 .navi ul li:last-child a{
   background: var(--main-brown);
-  border: 0.125rem solid var(--main-brown);
+  border: .125rem solid var(--main-brown);
   border-radius: 0 0 1.25rem 1.25rem;
   }
 .navi ul li:last-child a {
@@ -325,7 +325,7 @@ section.content_survey .survey_box {
   margin-top: 1.875rem;
   padding: 5rem 3.75rem;
   background: var(--main-white);
-  border: 0.0625rem solid #333;
+  border: .0625rem solid #333;
   }
 
 .survey_box::before {
@@ -348,6 +348,7 @@ section.content_survey .survey_box {
 .survey_box .survey_group:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
+
   border-bottom: none;
   }
 .survey_box .survey_group .survey_title {
@@ -441,7 +442,7 @@ section.content_survey .survey_box {
   height: 3.75rem;
   padding: 1rem 1.25rem 1rem 1.25rem;
   font-size: 1.5rem;
-  border: 0.0625rem solid #02a39f;
+  border: .0625rem solid #02a39f;
 
   }
 input::placeholder,
@@ -468,7 +469,7 @@ textarea::placeholder {
   height: 13.5625rem;
   padding: 1rem 1.25rem 1rem 1.25rem;
   font-size: 1.5rem;
-  border: 0.0625rem solid #02a39f;
+  border: .0625rem solid #02a39f;
   }
 .btn_submit {
   width: 35.125rem;
@@ -480,7 +481,7 @@ textarea::placeholder {
   text-align: center;
   color: #333;
   background: #fded7c;
-  border: 0.0625rem solid #333;
+  border: .0625rem solid #333;
   border-radius: 6.25rem;
   }
 
@@ -538,13 +539,14 @@ textarea::placeholder {
   }
 .content_slide .img_title04 {
   width: 47.5rem;
-  margin-top: 0.75rem;
+  margin-top: .75rem;
   }
 .content_slide .swiper-slide {
   width: 100%;
   padding: 4.625rem 6.25rem;
   background: #fff;
-  border: 0.0625rem dashed #ccc;
+  border: .0625rem dashed #ccc;
+
   box-sizing: border-box;
   }
 .content_slide .swiper-wrapper h3{
@@ -555,7 +557,8 @@ textarea::placeholder {
 .swiper-slide .card_wrapper + .card_wrapper {
   margin-top: 1.875rem;
   padding-top: 1.875rem;
-  border-top: 0.0625rem solid #d8cebe;
+
+  border-top: .0625rem solid #d8cebe;
   }
 .swiper-slide .card_wrapper .card_list {
   display: flex;
@@ -571,12 +574,12 @@ textarea::placeholder {
   font-size: 1.375rem;
   }
 .swiper-slide .card_wrapper .card_list .card_item .card_desc {
-  margin-top: 0.25rem;
+  margin-top: .25rem;
   font-size: 1.125rem;
   }
 .swiper-pagination {
   position: relative;
-}
+  }
 .swiper-pagination::before {
   content: "";
   display: block;
@@ -588,18 +591,18 @@ textarea::placeholder {
   height: 1.25rem;
   /* transform: translate(-50%, -50%); */
   background: url(../img/bg_tab.png) no-repeat center / contain;
-}
+  }
 .swiper-pagination-bullet {
   position: relative;
   width: 11.625rem;
   height: auto;
-  padding: 0.5rem 0;
+  padding: .5rem 0;
   font-size: 2rem;
   color: #888;
   background: none;
   opacity: 1;
   cursor: pointer;
-}
+  }
 
 .swiper-pagination-bullet::before,
 .swiper-pagination-bullet-active::before {
@@ -611,14 +614,14 @@ textarea::placeholder {
   z-index: -1;
   width: 11.625rem;
   height: 4.25rem;
-  transform: translate(-50%, -50%);
   background: url(../img/btn_swiper_bg.png) no-repeat center / contain;
-}
+  transform: translate(-50%, -50%);
+  }
 
 .swiper-pagination-bullet-active {
   font-weight: 700;
   color: var(--main-white);
-}
+  }
 
 .swiper-pagination-bullet-active:nth-child(1)::before { background-image: url(../img/btn_swiper_yellow.svg); }
 .swiper-pagination-bullet-active:nth-child(2)::before { background-image: url(../img/btn_swiper_pink.svg); }
@@ -629,41 +632,41 @@ textarea::placeholder {
   width: 100%;
   height: auto;
   margin-top: 12.375rem;
-  padding: 0.625rem;
+  padding: .625rem;
   background: #fffcf6;
   border-radius: 1.25rem;
   }
 .swiper_box::before {
-  display: block;
   content: "";
-  width: 2.4375rem;
-  height: 8rem;
+  display: block;
+  position: absolute;
   top: -6.875rem;
   left: 3rem;
-  background: url(../img/img_rope.png) no-repeat center / contain;
-  position: absolute;
   z-index: 10;
-}
-.swiper_box::after {
-  display: block;
-  content: "";
   width: 2.4375rem;
   height: 8rem;
+  background: url(../img/img_rope.png) no-repeat center / contain;
+  }
+.swiper_box::after {
+  content: "";
+  display: block;
+  position: absolute;
   top: -6.875rem;
   right: 3rem;
-  background: url(../img/img_rope.png) no-repeat center / contain;
-  position: absolute;
   z-index: 10;
-}
+  width: 2.4375rem;
+  height: 8rem;
+  background: url(../img/img_rope.png) no-repeat center / contain;
+  }
 .swiper_box .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   position: absolute;
   top: -6.875rem;
   bottom: auto;
   left: 0;
   z-index: 10;
-  gap: 1.5rem;
-  display: flex;
-  justify-content: center;
   }
 
 .swiper_box .swiper-button-prev,
@@ -710,7 +713,7 @@ footer .content p,
   color: #4d4d4d;
   }
 .content .check_list_box ul.check_list li + li {
-  margin-top: 0.875rem;
+  margin-top: .875rem;
   }
 .content .check_list_box ul.check_list li::before {
   content: "";
