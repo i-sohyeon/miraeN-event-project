@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>미래엔 6월 호국보훈의달 특강</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css">
   <link href="css/style.css" rel="stylesheet">
-
-  <script src="js/jquery-1.12.3.js"></script>
-  <script src="js/script.js"></script>
 </head>
 <body>
   <div class="top-banner">
@@ -17,18 +15,16 @@
     </a>
   </div>
   
-
-
   <nav class="navi">
     <ul>
-      <li><a href="#section1">계기교육 안내</a></li>
-      <li><a href="#section2">초코타임미리보기</a></li>
-      <li><a href="#section3">초코타임 미리보기</a></li>
-      <li><a href="#section4" class="ico">커리큘럼과목</a></li>
-      <li><a href="#section5" class="ico">신청하기</a></li>
+      <li><a href="#section1" class="active"><span>헤더 이미지</span></a></li>
+      <li><a href="#section2"><span>계기교육 안내</span></a></li>
+      <li><a href="#section3"><span>초코타임 미리보기</span></a></li>
+      <li><a href="#section4"><span class="ico_fire">커리큘럼과목</span></a></li>
+      <li><a href="#section5"><span class="ico_present">신청하기</span></a></li>
       <li>
         <a href="#" >
-          <img src="./img/text_top_btn.png" alt="위로가기 버튼" class="top_btn">
+          <img src="./img/btn_top.png" alt="위로가기 버튼" class="top_btn">
         </a>
       </li>
     </ul> 
@@ -58,8 +54,6 @@
         </header>
         <img src="./img/main_top_visual.png" alt="" class="main_img">
 
-
-
         <div class="content event_banner">
           <div class="event_title">
             <img src="./img/img_firstserve.png" alt="선착순" class="img_firstserve">
@@ -68,7 +62,6 @@
             </p>
             <a href="#none" class="event_banner_link ">
               <span class="ico_arrow">GO GO!</span>
-              <!-- <span class="sr-only">초코타임 신청하기</span> -->
             </a>
           </div>
           <div class="event_info">
@@ -96,7 +89,6 @@
           </div>
         </div>
       </section>
-
 
       <section class="content_survey" id="section2">
         <div class="content">
@@ -126,43 +118,43 @@
                 주요 사용하는 퍼블리싱 기술/환경을 선택해 주세요. (복수 선택 가능)
               </legend>
           
-              <div class="check_list">
-                <label class="check_item">
+              <div class="checkbox_list">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="html">
                   <span>HTML5</span>
                 </label>
           
-                <label class="check_item">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="css">
                   <span>CSS3</span>
                 </label>
           
-                <label class="check_item">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="javascript">
                   <span>JavaScript</span>
                 </label>
           
-                <label class="check_item">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="jquery">
                   <span>jQuery</span>
                 </label>
           
-                <label class="check_item">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="react">
                   <span>React</span>
                 </label>
           
-                <label class="check_item">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="vue">
                   <span>Vue</span>
                 </label>
           
-                <label class="check_item">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="figma">
                   <span>Figma</span>
                 </label>
           
-                <label class="check_item">
+                <label class="checkbox_item">
                   <input type="checkbox" name="skill" value="photoshop">
                   <span>Photoshop</span>
                 </label>
@@ -198,30 +190,37 @@
             </fieldset>
           
             <div class="survey_group">
-              <label for="portfolio" class="survey_title">
-                포트폴리오 또는 대표 작업을 URL을 작성해 주세요.
-                <span class="survey_desc">퍼블리싱한 웹사이트 주소를 작성해 주세요.</span>
-              </label>
-          
-              <input
-                type="url"
-                id="portfolio"
-                name="portfolio"
-                class="text-input"
-                placeholder="Ex. https://example.com"
-                autocomplete="url"
-              >
+              <div class="survey_title">
+                <label for="portfolio" class="survey_title">
+                  포트폴리오 또는 대표 작업을 URL을 작성해 주세요.
+                  <span class="survey_desc">퍼블리싱한 웹사이트 주소를 작성해 주세요.</span>
+                </label>
+              </div>
+            
+              
+              <div class="text_item">
+                <input
+                  type="url"
+                  id="portfolio"
+                  name="portfolio"
+                  placeholder="Ex. 중학 국어 2-1(신유식)"
+                  autocomplete="url"
+                >
+              </div>
+         
             </div>
           
             <div class="survey_group">
-              <label for="opinion" class="survey_title">
-                이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고 싶은 점을 적어주세요.
-                <p class="survey_desc02">
-                  마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해 주세요.
-                </p>
-              </label>
+              <div class="survey_title">
+                <label for="opinion" >
+                  이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고 싶은 점을 적어주세요.
+                  <p class="survey_desc02">
+                    마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해 주세요.
+                  </p>
+                </label>  
+              </div>
           
-              <div class="textarea-wrap">
+              <div class="textarea_wrap">
                 <textarea
                   id="opinion"
                   name="opinion"
@@ -230,23 +229,104 @@
                   placeholder="내용을 입력해 주세요."
                 ></textarea>
           
-                <span class="char-count" aria-live="polite">
-                  <span id="char-count">0</span>/2,000
+                <span class="char_count">
+                  <span id="count">0</span>/2,000
                 </span>
               </div>
             </div>
+          </div>
+
+          <div class="btn_box">
+            <button type="submit" class="btn_submit">지원하기</button>
           </div>
         </div>
       </section>
 
       <section class="content_video" id="section3" >
         <div class="content">
-          ss
+          <img src="./img//img_taegeukgi.png" alt="" class="img_taegeukgi">
+          <h2>
+            <img src="./img/img_title03.png" alt="외우는 역사가 아니라 이해하는 역사로!" class="img_title03">
+          </h2>
+          <p>한국사 전문가 연희쌤과 ZOOM으로 함께하는<br>초등 맞춤형 라이브 수업을 체험헤 보세요!</p>
+
+          <div class="video_wrapper">
+            <video id="myVideo" poster="./img/img_thumbnail.png" playsinline preload="metadata">
+              <source src="./img/video.mp4" type="video/mp4">
+            </video>
+
+            <div class="check_list_box">
+              <ul class="check_list">
+                <li>초등 사회 전문 선생님&친구들과 함께하는 ‘무료’ LIVE 수업</li>
+                <li>외우지 않아도 이해되는, 아이 눈높이 역사 수업</li>
+                <li>6월의 의미를 배우고, 스스로 생각하는 힘이 자라는 시간</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="section4">
+      <section class="content_slide" id="section4">
+        <div class="content">
+          <p><img src="./img/logo_choco02.png" alt="" class="logo_choco02"></p>
+          <h2>
+            <img src="./img/img_title04.png" alt="" class="img_title04">
+          </h2>
 
+          <div class="swiper_box">
+            <div class="swiper cotentSlide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card_wrapper">
+                    <h3>미리보는 교과서 작품</h3>
+                    <ul class="card_list">
+                      <li class="card_item">
+                        <img src="./img/img_slide01_1.png" alt="">
+                        <p class="card_title">교과서 작품 애니메이션</p>
+                        <p class="card_desc">작품 애니메이션과 레몬 영상으로<br>2학기 교과서 수록 이야기를 감상해요</p>
+                      </li>
+                      <li class="card_item">
+                        <img src="./img/img_slide01_2.png" alt="">
+                        <p class="card_title">확인 퀴즈</p>
+                        <p class="card_desc">확인 퀴즈로 이야기의 줄거리와 주요 장면을 이해해요.</p>
+                      </li>
+                      <li class="card_item">
+                        <img src="./img/img_slide01_3.png" alt="">
+                        <p class="card_title">감상 카드</p>
+                        <p class="card_desc">작품별로 꼭 알아야 하는 내용을 감상카드로 정리해요.<br>
+                          *감상카드는 1-4학년에 제공됩니다.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card_wrapper">
+                    <h3>미리 익히는 교과서 어휘</h3>
+                    <ul class="card_list">
+                      <li class="card_item">
+                        <img src="./img/img_slide01_4.png" alt="">
+                        <!-- <p class="card_title">교과서 작품 애니메이션</p> -->
+                        <p class="card_desc">단원별 핵심 어휘를 블록 게임으로 재미있게 익혀요.</p>
+                      </li>
+                      <li class="card_item">
+                        <img src="./img/img_slide01_5.png" alt="">
+                        <!-- <p class="card_title">교과서 작품 애니메이션</p> -->
+                        <p class="card_desc">
+                          낱말 뜻과 교과서 속 예시 문장을 읽고, 알맞은 낱말을 찾으며<br>
+                          어휘력과 문장 이해력을 함께 키워요
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">수학</div>
+                <div class="swiper-slide">사회</div>
+                <div class="swiper-slide">과학</div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
 
       <section id="section5">
@@ -255,7 +335,6 @@
     <footer>
       <div class="content">
         <p>&lt;수업 신청 및 참여 &gt;</p>
-        
         <ul class="dash_list">
           <li>ZOOM으로 진행되는 라이브 수업이며, 회원가입만 해도 누구나 신청할 수 있습니다.</li>
           <li>사전 신청자는 수업 30분 전 참여 안내 문자가 발송됩니다. (SMS 수신동의 필수)
@@ -279,5 +358,35 @@
 
     </footer>
   </main>
+
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.cotentSlide', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+
+        renderBullet: function (index, className) {
+          const labels = [
+            '국어',
+            '수학',
+            '사회',
+            '과학'
+          ];
+
+          return `<button type="button" class="${className}">
+            ${labels[index]}
+          </button>`;
+        }
+      }
+    });
+  </script>
 </body>
 </html>
