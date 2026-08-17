@@ -3,7 +3,7 @@
 html {
   font-size: 16px;
   }
-@media (max-width: 1700px) {
+@media (max-width: 1200px) {
   html {
     font-size: calc(100vw / 1200 * 16);
     }
@@ -546,14 +546,57 @@ textarea::placeholder {
   padding: 4.625rem 6.25rem;
   background: #fff;
   border: .0625rem dashed #ccc;
-
-  box-sizing: border-box;
   }
-.content_slide .swiper-wrapper h3{
+
+.content_slide .swiper_title {
+  position: relative;
+}
+
+.content_slide .swiper_title::before {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 894px;
+  height: 78px;
+  background: url(../img/bg_slide_title.png) center top / cover no-repeat;
+  transform: translateX(-50%);
+}
+
+.content_slide .swiper-wrapper .sub_title{
   font-size: 1.875rem;
   color: var(--main-brown);
-  }
+  font-weight: 700;
 
+  }
+.content_slide .swiper-wrapper .sub_title span {
+  position: relative;
+
+  padding: 0 24px;
+}
+.content_slide .swiper-wrapper .sub_title span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 19px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: url(../img/ico_star.png) center top / cover no-repeat;
+}
+.content_slide .swiper-wrapper .sub_title span::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 19px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url(../img/ico_star.png) center top / cover no-repeat;
+}
 .swiper-slide .card_wrapper + .card_wrapper {
   margin-top: 1.875rem;
   padding-top: 1.875rem;
@@ -564,18 +607,26 @@ textarea::placeholder {
   display: flex;
   justify-content: center;
   gap: 2.375rem;
-  margin-top: 1.625rem;
+  margin-top: 26px;
   }
 .swiper-slide .card_wrapper .card_list .card_item img {
   width: 19.375rem;
   }
-.swiper-slide .card_wrapper .card_list .card_item .card_title {
-  margin-top: 1.25rem;
-  font-size: 1.375rem;
+.swiper-slide .card_wrapper .card_text {
+  margin-top: 20px;
   }
-.swiper-slide .card_wrapper .card_list .card_item .card_desc {
-  margin-top: .25rem;
+.swiper-slide .card_wrapper .card_text .card_title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--chocopop_brown01);
+  }
+.swiper-slide .card_wrapper .card_text .card_title + .card_desc{
+  margin-top: 4px;
+  }
+.swiper-slide .card_wrapper .card_text .card_desc {
   font-size: 1.125rem;
+  line-height: 1.4;
+  color: #6f5745;
   }
 .swiper-pagination {
   position: relative;
@@ -757,4 +808,13 @@ footer .content p,
   }
 .btn_box {
   text-align: center;
+  }
+
+.bul_text {
+  font-size: 1rem;
+  color: #666;
+  }
+
+  .w378{
+    width: 378px !important;
   }
