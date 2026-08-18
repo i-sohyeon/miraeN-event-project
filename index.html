@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>미래엔 6월 호국보훈의달 특강</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css">
   <link href="css/style.css" rel="stylesheet">
-  <!-- Font Awesome 6 CDN -->
-  <script src="https://kit.fontawesome.com/f65dda8c21.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="wrap">
@@ -102,13 +100,13 @@
             </div>
   
             <div class="animate_box">
-              <div class="img_card_01">
+              <div class="img_card img_card_01" data-aos="fade-left" data-aos-delay="200">
                 <img src="./img/img_animate_card01.png" alt="3명 중 1명은 별다른 추모나 기념을 하지 않아… 포항공대 신물 발췌">
               </div>
-              <div class="img_card_02">
+              <div class="img_card img_card_02" data-aos="fade-right" data-aos-delay="400">
                 <img src="./img/img_animate_card02.png" alt="헌충일이 뭐 하는 날인지는 모르고 그냥 노는 날이라 기뻐요 연합뉴스 발췌">
               </div>
-              <div class="img_card_03">
+              <div class="img_card img_card_03" data-aos="fade-left" data-aos-delay="600">
                 <img src="./img/img_animate_card03.png" alt="호국영령? 그게 뭐예요? 기호일보 발췌">
               </div>
             </div>
@@ -254,7 +252,7 @@
             <p>한국사 전문가 연희쌤과 ZOOM으로 함께하는<br>초등 맞춤형 라이브 수업을 체험헤 보세요!</p>
   
             <div class="video_wrapper">
-              <video id="myVideo" poster="./img/img_thumbnail.png" playsinline preload="metadata">
+              <video id="videoBox" poster="./img/img_thumbnail.png" playsinline preload="metadata">
                 <source src="./img/video.mp4" type="video/mp4">
               </video>
   
@@ -609,9 +607,9 @@
     </footer>
   </div>
 
-
-  <script src="js/jquery-1.12.3.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="https://kit.fontawesome.com/f65dda8c21.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper('.contentSlide', {
@@ -641,6 +639,15 @@
         disableOnInteraction: false,
       },
     });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      // AOS 초기화
+      AOS.init({
+          duration: 1000,
+          once: false,
+      });
   </script>
 </body>
 </html>
