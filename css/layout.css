@@ -67,6 +67,7 @@ html {
       transform: rotate(0deg);
     }
   }
+
 .top-banner a .banner-text {
   font-size: 1.75rem;
   }
@@ -94,12 +95,11 @@ html {
   background: var(--main-white);
   border-radius: 1.25rem;
   }
+.navi ul li img {width: 3rem;}
 .navi ul li a {
   padding: 1.375rem;
   letter-spacing: -2%;
   text-align: center;
-  }
-.navi ul li a {
   border: .125rem solid #fff;
   }
 .navi ul li a:hover {
@@ -111,18 +111,17 @@ html {
   border: .125rem solid #ff8aab;
   }
 
-.navi ul li:first-child a{
+.navi ul li:first-child a {
   border-radius: 1.25rem 1.25rem 0 0;
-  }
-.navi ul li:last-child a{
+}
+.navi ul li:last-child button {
+  width: 100%;
+  padding: .625rem 0;
   background: var(--main-brown);
   border: .125rem solid var(--main-brown);
   border-radius: 0 0 1.25rem 1.25rem;
   }
-.navi ul li:last-child a {
-  padding: .625rem 0;
-  }
-.navi ul li:last-child a .top_btn {
+.navi ul li:last-child button.top_btn > img{
   width: 3rem;
   }
 
@@ -191,7 +190,7 @@ header .content .logo_miraen { width: 6rem; }
   display: block;
   position: absolute;
   left: 50%;
-  z-index: -1;
+  z-index: -2;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -238,12 +237,16 @@ img.img_firstserve {
 .event_info ul {
   display: flex;
   gap: 10rem;
-  margin: 4.5rem 0 0 4.6875rem;
+  /* margin: 4.5rem 0 0 4.6875rem; */
+  padding: 0 0 0 4.6875rem;
   }
 .event_info li {
   text-align: center;
   color: #333;
   }
+.event_info li:nth-child(1) {margin-top: 4.0625rem;}
+.event_info li:nth-child(2) {margin-top: 3.4375rem;}
+.event_info li:nth-child(3) {margin-top: 2.875rem;}
 .event_info li h3,
 .event_info li p {
   line-height: 150%;
@@ -880,21 +883,34 @@ footer {
   font-size: 0.875rem;
 }
 
-footer .footer_inner {
+.footer_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.25rem;
 }
 
-footer .footer_logo img {
+.footer_inner .footer_logo img {
   width: 7.5rem; 
   height: auto;
 }
 
-.footer_info {
+.footer_inner .footer_info {
   flex: 1;
   margin: 0 3.75rem;
+
+}
+.footer_inner .footer_info .footer_address {
+  font-style: normal;
+  line-height: 1.4;
+}
+.footer_inner .footer_info .footer_address span {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+.footer_inner .copyright {
+  margin-top: 1rem;
+  color: #666;
 }
 
 .footer_links {
@@ -905,21 +921,6 @@ footer .footer_logo img {
 
 .footer_links a {
   color: #ddd;
-}
-
-.footer_links li:first-child a {
-  color: #ffc107;
-}
-
-
-.footer_address span {
-  display: inline-block;
-  margin-right: 0.75rem;
-}
-
-.footer_address .copyright {
-  margin-top: 0.5rem;
-  color: #666;
 }
 
 .footer_sns_list {

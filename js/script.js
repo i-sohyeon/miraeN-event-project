@@ -55,3 +55,13 @@ $(document).ready(function () {
     $videoWrapper.removeClass('is-playing');
   });
 });
+
+
+// top button
+$(document).ready(function () {
+  $('.top_btn').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 300);
+    return false;
+  });
+
+});
