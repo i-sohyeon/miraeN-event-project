@@ -1,15 +1,66 @@
 @charset "utf-8";
 
 :root {
+  --chocopop_brown01: #5a371e;
+  --chocopop_brown02: #331d0a;
+  --chocopop_pink03: #ff8296;
   --content-width: 75rem;
+  --font-base: "Pretendard";
+  --main-brown: #5a371e;
+  --main-pink: #ff8aab;
+  --main-white: #fff;
+  --main-yellow: #fffe8d;
+  }
 
-  --main-pink: #FF8AAB;
-  --main-white: #FFFFFF;
-  --main-brown: #5A371E;
-  --chocopop_brown01: #5A371E;
-  --chocopop_brown02: #331D0A;
-  --chocopop_pink03: #FF8296;
-  --main-yellow: #FFFE8D;
 
-  --font-base: 'Pretendard';
-}
+/* icon */
+.ico_arrow {
+  position: relative;
+  padding-right: 3.75rem;
+  }
+.ico_arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2.6875rem;
+  height: 1.5rem;
+  background: url(../img/img_arrow.png) center top / contain no-repeat;
+  transform: translateY(-50%);
+  }
+
+
+.navi [class^="ico"] {
+  position: relative;
+  padding-right: 1.5625rem;
+  }
+.ico_fire::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(../img/ico_fire.png) center top / contain no-repeat;
+  }
+.ico_present::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(../img/ico_present.png) center top / contain no-repeat;
+  }
+
+/* point color */
+.fc_yellow {color: #f0a000;}
+.fc_pink {color: #eb5365;}
+.fc_purple {color: #6873cc;}
+.fc_green {color: #2bab7b;}
+
+.highlight_pink {color: var(--chocopop_pink03);}
+.highlight_yellow {color: #fff764;}

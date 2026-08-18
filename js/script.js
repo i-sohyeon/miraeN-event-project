@@ -2,7 +2,7 @@ $(document).ready(function () {
   // 스크롤 이벤트 발생 시
   $(window).on('scroll', function () {
     var scrollPos = $(window).scrollTop(); // 현재 스크롤 Y위치
-    var headerOffset = 100; // 상단 고정 헤더가 있다면 해당 높이만큼 보정값 설정
+    var headerOffset = 70; // 상단 고정 헤더가 있다면 해당 높이만큼 보정값 설정
 
     // 모든 section을 순회하며 위치 확인
     $('section').each(function () {
@@ -28,7 +28,7 @@ $(document).ready(function () {
       var targetTop = $(target).offset().top;
 
       $('html, body').animate({
-        scrollTop: targetTop - 80 // 헤더 높이 고려하여 이동
+        scrollTop: targetTop - 70 // 헤더 높이 고려하여 이동
       }, 400);
     }
   });
@@ -55,4 +55,3 @@ $(document).ready(function () {
     $videoWrapper.removeClass('is-playing');
   });
 });
-
