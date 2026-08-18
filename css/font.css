@@ -1,34 +1,5 @@
 @charset "utf-8";
 
-/* Noto Sans KR */
-@font-face {
-	font-family: 'Noto Sans KR';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/noto-sans-kr-v8-korean-regular.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Noto Sans KR';
-	font-style: normal;
-	font-weight: 500;
-	src: url('../fonts/noto-sans-kr-v8-korean-500.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Noto Sans KR';
-	font-style: normal;
-	font-weight: 700;
-	src: url('../fonts/noto-sans-kr-v8-korean-700.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Noto Sans KR';
-	font-style: normal;
-	font-weight: 900;
-	src: url('../fonts/noto-sans-kr-v8-korean-900.woff2') format('woff2');
-}
-
 /* Pretendard */
 @font-face {
   font-family: 'Pretendard';
@@ -111,7 +82,6 @@
   url('../fonts/Pretendard/Pretendard-Black.ttf') format('truetype'),
 }
 
-
 /* Jalnan2 */
 @font-face {
   font-family: 'Jalnan2';
@@ -133,18 +103,5 @@
 @font-face {
   font-family: 'GmarketSans';
   src: url('../fonts/GmarketSans/GmarketSansTTFBold.ttf') format('truetype');
-  font-weight: 700;
-}
-
-/* Binggrae */
-@font-face {
-  font-family: 'Binggrae';
-  src: url('../fonts/Binggrae/Binggrae.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Binggrae';
-  src: url('../fonts/Binggrae/Binggrae-Bold.ttf') format('truetype');
   font-weight: 700;
 }
