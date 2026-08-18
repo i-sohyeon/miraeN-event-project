@@ -49,6 +49,23 @@ html {
   width: 4.5rem;
   height: 4rem;
   background: url("../img/img_siren.png") no-repeat center / cover;
+
+  animation: siren-swing 1s infinite ease-in-out;
+  transform-origin: bottom center;
+  }
+  @keyframes siren-swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-15deg);
+    }
+    75% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 .top-banner a .banner-text {
   font-size: 1.75rem;
