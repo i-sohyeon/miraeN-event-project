@@ -10,7 +10,7 @@ html {
   }
 .wrap {
   overflow-x: clip;
-}
+  }
 .top-banner {
   position: fixed;
   top: 0;
@@ -49,22 +49,22 @@ html {
   width: 4.5rem;
   height: 4rem;
   background: url("../img/img_siren.png") no-repeat center / cover;
-
   animation: siren-swing 1s infinite ease-in-out;
+
   transform-origin: bottom center;
   }
-  @keyframes siren-swing {
-    0% {
-      transform: rotate(0deg);
+@keyframes siren-swing {
+  0% {
+    transform: rotate(0deg);
     }
-    25% {
-      transform: rotate(-15deg);
+  25% {
+    transform: rotate(-15deg);
     }
-    75% {
-      transform: rotate(15deg);
+  75% {
+    transform: rotate(15deg);
     }
-    100% {
-      transform: rotate(0deg);
+  100% {
+    transform: rotate(0deg);
     }
   }
 
@@ -113,7 +113,7 @@ html {
 
 .navi ul li:first-child a {
   border-radius: 1.25rem 1.25rem 0 0;
-}
+  }
 .navi ul li:last-child button {
   width: 100%;
   padding: .625rem 0;
@@ -674,7 +674,7 @@ textarea::placeholder {
   z-index: 10;
   }
 
-.content_slide .swiper-pagination::before {
+.content_slide .card_wrap .swiper-pagination::before {
   content: "";
   display: block;
   position: absolute;
@@ -757,8 +757,6 @@ textarea::placeholder {
   }
 }
 
-
-
 /* section5 */
 .content_apply {
   padding: 7.5rem 0;
@@ -769,8 +767,6 @@ textarea::placeholder {
   width: 62.25rem;
   text-align: center;
   }
-
-
 .content_apply a[role="button"] {
   position: relative;
   margin-top: 5.875rem;
@@ -877,75 +873,75 @@ textarea::placeholder {
 
 footer {
   width: 100%;
-  padding: 3.125rem 0; 
-  background-color: #222222;
-  color: #cccccc;
-  font-size: 0.875rem;
-}
+  padding: 3.125rem 0;
+  font-size: .875rem;
+  color: #ccc;
+  background-color: #222;
+  }
 
 .footer_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.25rem;
-}
+  }
 
 .footer_inner .footer_logo img {
-  width: 7.5rem; 
+  width: 7.5rem;
   height: auto;
-}
+  }
 
 .footer_inner .footer_info {
   flex: 1;
   margin: 0 3.75rem;
 
-}
+  }
 .footer_inner .footer_info .footer_address {
   font-style: normal;
   line-height: 1.4;
-}
+  }
 .footer_inner .footer_info .footer_address span {
   display: inline-block;
-  margin-right: 0.75rem;
-}
+  margin-right: .75rem;
+  }
 .footer_inner .copyright {
   margin-top: 1rem;
   color: #666;
-}
+  }
 
 .footer_links {
   display: flex;
   gap: 1.25rem;
-  margin-bottom: 0.75rem;
-}
+  margin-bottom: .75rem;
+  }
 
 .footer_links a {
   color: #ddd;
-}
+  }
 
 .footer_sns_list {
   display: flex;
   gap: 1rem;
-}
+  }
 
 .footer_sns_list a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.5rem; 
+  width: 2.5rem;
   height: 2.5rem;
   color: var(--main-white);
   border-radius: 50%;
-  transition: all 0.3s ease;
-}
+  transition: all .3s ease;
+  }
 
 .footer_sns_list a i {
   font-size: 2rem;
-}
+  }
 .footer_sns_list a:hover {
   background-color: var(--main-brown);
   transform: translateY(-3px);
-}
+  }
 
 /* 기타 클래스 */
 .btn_box {text-align: center;}
