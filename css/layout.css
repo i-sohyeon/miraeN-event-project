@@ -173,6 +173,11 @@ header .header_right .btn_login {
   border: .125rem solid #000;
   border-radius: 6.25rem;
   }
+header .header_right .btn_login:hover {
+  background: #000;
+  color: var(--main-white);
+  transition: all .2s ease;
+}
 header .content .logo_choco { width: 4.25rem; height: auto;}
 header .content .logo_miraen { width: 6rem; }
 .event_banner {
@@ -374,6 +379,7 @@ section.content_survey .survey_box {
   font-weight: 400;
   }
 .survey_box .survey_desc02 {
+  display: block;
   margin-top: 1rem;
   font-family: "pretendard";
   font-size: 1.5rem;
@@ -502,6 +508,7 @@ textarea::placeholder {
   background: #fded7c;
   border: .0625rem solid #333;
   border-radius: 6.25rem;
+  box-shadow: 0 8px 0 0 #333;
   }
 
 .content_video {
@@ -805,6 +812,7 @@ textarea::placeholder {
   background: var(--main-brown);
   border: .1875rem solid #ffffff30;
   border-radius: 6.25rem;
+  box-shadow: 0 8px 0 0 #331906;
   }
 .content_apply a[role="button"]::before {
   content: "";
