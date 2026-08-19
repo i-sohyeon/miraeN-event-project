@@ -620,16 +620,20 @@
   <script src="https://kit.fontawesome.com/f65dda8c21.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
   <script>
+    const slideCount = document.querySelectorAll('.contentSlide .swiper-slide').length;
+  
     var swiper = new Swiper('.contentSlide', {
+      initialSlide: Math.floor(Math.random() * slideCount),
+  
       navigation: {
         nextEl: '.swiper_wrap .swiper-button-next',
         prevEl: '.swiper_wrap .swiper-button-prev',
       },
-
+  
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-
+  
         renderBullet: function (index, className) {
           const labels = [
             '국어',
