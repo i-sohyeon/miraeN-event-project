@@ -204,14 +204,13 @@ header .content .logo_miraen { width: 6rem; }
   background-image: url(../img/img_arrow_down.png);
   }
 .event_banner::after {
-  left: 55%;
   bottom: -3.125rem;
+  left: 55%;
   z-index: -2;
   width: 38.375rem;
   height: 35rem;
-  transform: translateX(-55%);
-
   background-image: url(../img/ch.gif);
+  transform: translateX(-55%);
   }
 
 img.img_firstserve {
@@ -444,13 +443,14 @@ section.content_survey .survey_box {
   height: 1.5rem;
   border: .0625rem solid #666;
   border-radius: 50%;
+
   box-sizing: border-box;
-}
+  }
 
 .survey_box .radio_list .radio_item input[type="radio"]:checked + span::before {
-  border: none;
   background: url(../img/ico_checkbox.png) center center / contain no-repeat;
-}
+  border: none;
+  }
 .survey_box .radio_list .radio_item span {
   font-size: 1.5rem;
   color: #333;
@@ -519,10 +519,10 @@ textarea::placeholder {
   width: 62.625rem;
   }
 .content_video h2 + p {
+  margin-top: 1.5rem;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-top: 1.5rem;
   color: var(--main-brown);
   }
 .content_video .video_wrapper {
@@ -554,8 +554,8 @@ textarea::placeholder {
   }
 .content_video .video_wrapper video{
   width: 68.75rem;
+  margin-top: -.5rem;
   border-radius: 1.75rem;
-  margin-top: -0.5rem;
   }
 
 .swiper_wrap {
@@ -775,11 +775,13 @@ textarea::placeholder {
   background: url(../img/btn_swiper_next.png) no-repeat center / contain;
   }
 
+
 .swiper-button-next, .swiper-button-prev {
   ::slotted(svg), svg {
       display: none;
   }
 }
+  
 
 /* section5 */
 .content_apply {
@@ -923,37 +925,37 @@ footer {
 
   }
 .footer_address {
+  font-size: .875rem;
   font-style: normal;
-  font-size: 0.875rem;
-  color: #666;
   line-height: 1.5;
-}
+  color: #666;
+  }
 
 .footer_address p {
   display: flex;
-  align-items: center;
   flex-wrap: nowrap;
+  align-items: center;
   white-space: nowrap;
-}
+  }
 
 .footer_address span {
   display: inline-flex;
   align-items: center;
-}
+  }
 
 .footer_address span + span::before {
   content: "";
   display: inline-block;
   width: 1px;
-  height: 0.625rem;
-  background-color: #999999;
-  margin: 0 0.75rem;
-}
+  height: .625rem;
+  margin: 0 .75rem;
+  background-color: #999;
+  }
 
 .footer_address a {
-  color: inherit;
   text-decoration: none;
-}
+  color: inherit;
+  }
 .footer_inner .copyright {
   margin-top: 1rem;
   color: #666;

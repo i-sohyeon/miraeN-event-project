@@ -623,6 +623,7 @@
     const slideCount = document.querySelectorAll('.contentSlide .swiper-slide').length;
   
     var swiper = new Swiper('.contentSlide', {
+      a11y: false, // 새로고침 시 자동 포커스로 인한 화면 튕김 방지 위해 추가 (접근성 포커스 이동 방지)
       initialSlide: Math.floor(Math.random() * slideCount),
   
       navigation: {
