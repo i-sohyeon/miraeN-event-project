@@ -122,7 +122,10 @@ html {
   border-radius: 0 0 1.25rem 1.25rem;
   }
 .navi ul li:last-child button.top_btn > img{
+  display: block;
   width: 3rem;
+  height: auto;
+  margin: 0 auto;
   }
 
 main {
@@ -387,13 +390,14 @@ section.content_survey .survey_box {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: polygon(0 0, 0 0, 0 0);
+  padding: 0;
   white-space: nowrap;
   border: 0;
+  overflow: hidden;
+
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
   }
 
 .survey_box .survey_group .checkbox_list .checkbox_item {
@@ -518,7 +522,8 @@ textarea::placeholder {
   width: 62.625rem;
   }
 .content_video h2 + p {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--main-brown);
   }

@@ -17,6 +17,9 @@ body {
   font-family: "Pretendard";
   line-height: 1;
   color: #111;
+
+  -webkit-text-size-adjust: 100%; /* 크롬, 사파리 등 모바일 브라우저 표준 */
+  text-size-adjust: 100%;
   }
 ol, ul, li {
   list-style: none;
