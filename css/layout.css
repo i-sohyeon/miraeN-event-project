@@ -170,7 +170,7 @@ header .header_right .btn_login {
   border: .125rem solid #000;
   border-radius: 6.25rem;
   }
-header .content .logo_choco { width: 4.25rem; }
+header .content .logo_choco { width: 4.25rem; height: auto;}
 header .content .logo_miraen { width: 6rem; }
 .event_banner {
   position: absolute;
@@ -384,8 +384,19 @@ section.content_survey .survey_box {
   }
 .survey_box .survey_group .checkbox_list .checkbox_item input[type="checkbox"],
 .survey_box .radio_list .radio_item input[type="radio"] {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  white-space: nowrap;
+  border: 0;
   }
+
+
 .survey_box .survey_group .checkbox_list .checkbox_item {
   display: inline-block;
   cursor: pointer;
@@ -674,7 +685,7 @@ textarea::placeholder {
   z-index: 10;
   }
 
-.content_slide .card_wrap .swiper-pagination::before {
+.content_slide .swiper-pagination::before {
   content: "";
   display: block;
   position: absolute;
@@ -767,6 +778,8 @@ textarea::placeholder {
   width: 62.25rem;
   text-align: center;
   }
+
+
 .content_apply a[role="button"] {
   position: relative;
   margin-top: 5.875rem;
@@ -946,4 +959,5 @@ footer {
 /* 기타 클래스 */
 .btn_box {text-align: center;}
 .bul_text {font-size: 1rem; color: #666;}
+
 .w378 {width: 23.625rem !important;}
