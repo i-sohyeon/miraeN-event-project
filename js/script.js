@@ -1,18 +1,20 @@
 $(document).ready(function () {
-  // 스크롤 이벤트 발생 시
+
+  // px -> rem으로 변환
+  const rem = (rem) => rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+  const headerOffset = rem(4.375); // 70px -> 4.375rem (70/16)
+
   $(window).on('scroll', function () {
-    var scrollPos = $(window).scrollTop(); // 현재 스크롤 Y위치
-    var headerOffset = 70; // 상단 고정 헤더가 있다면 해당 높이만큼 보정값 설정
+    const scrollPos = $(this).scrollTop();
 
-    // 모든 section을 순회하며 위치 확인
-    $('section').each(function () {
-      var targetTop = $(this).offset().top - headerOffset;
-      var targetBottom = targetTop + $(this).outerHeight();
-      var targetId = $(this).attr('id');
+    $('section[id]').each(function () {
+      const $this = $(this);
+      const top = $this.offset().top - headerOffset - 5;
+      const bottom = top + $this.outerHeight();
 
-      if (scrollPos >= targetTop && scrollPos < targetBottom) {
-        $('.navi ul li a').removeClass('active'); 
-        $('.navi ul li a[href="#' + targetId + '"]').addClass('active');
+      if (scrollPos >= top && scrollPos < bottom) {
+        $('.navi a').removeClass('active')
+          .filter(`[href="#${$this.attr('id')}"]`).addClass('active');
       }
     });
   });
@@ -24,7 +26,7 @@ $(document).ready(function () {
       var targetTop = $(target).offset().top;
 
       $('html, body').animate({
-        scrollTop: targetTop - 60
+        scrollTop: targetTop - rem(3.75)
       }, 400);
     }
   });
@@ -32,6 +34,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+  // 비디오 영역
   var $videoWrapper = $('.video_wrapper');
   var video = $('#videoBox')[0]; 
 
@@ -44,19 +47,22 @@ $(document).ready(function () {
       $videoWrapper.removeClass('is-playing');
     }
   });
-
-  // 영상이 끝까지 재생되었을 때 처리
   $('#videoBox').on('ended', function () {
     $videoWrapper.removeClass('is-playing');
   });
-});
 
-
-// top button
-$(document).ready(function () {
+  // top button
   $('.top_btn').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 300);
     return false;
   });
 
+  //textarea count
+  const textarea = $('#opinion');
+  const count = $('#count');
+  
+  textarea.on('input', function () {
+  const currentLength = $(this).val().length;
+  count.text(currentLength);
+  });
 });
