@@ -30,25 +30,23 @@ $(document).ready(function () {
       }, 400);
     }
   });
-});
 
-
-$(document).ready(function () {
   // 비디오 영역
-  var $videoWrapper = $('.video_wrapper');
+  var videoWrapper = $('.video_wrapper');
   var video = $('#videoBox')[0]; 
 
-  $videoWrapper.on('click', function () {
+  videoWrapper.on('click', function () {
     if (video.paused) {
       video.play();
-      $videoWrapper.addClass('is-playing');
+      videoWrapper.addClass('is-playing');
     } else {
       video.pause();
-      $videoWrapper.removeClass('is-playing');
+      videoWrapper.removeClass('is-playing');
     }
   });
+
   $('#videoBox').on('ended', function () {
-    $videoWrapper.removeClass('is-playing');
+    videoWrapper.removeClass('is-playing');
   });
 
   // top button
@@ -62,7 +60,7 @@ $(document).ready(function () {
   const count = $('#count');
   
   textarea.on('input', function () {
-  const currentLength = $(this).val().length;
-  count.text(currentLength);
+    const currentLength = $(this).val().length;
+    count.text(currentLength);
   });
 });

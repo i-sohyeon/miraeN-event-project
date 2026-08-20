@@ -1,15 +1,34 @@
 @charset "utf-8";
 
 :root {
+  /* layout */
+  --content-width: 75rem;
+
+  /* typo */
+  --font-base: "Pretendard";
+
+  /* color */
+  --main-white: #fff;
+  --main-black: #000;
+  --main-gray: #666;
+  --main-dark-gray: #333;
+  --main-brown: #5a371e;
+  --main-pink: #ff8aab;
+  --main-yellow: #fffe8d;
+
   --chocopop_brown01: #5a371e;
   --chocopop_brown02: #331d0a;
   --chocopop_pink03: #ff8296;
-  --content-width: 75rem;
-  --font-base: "Pretendard";
-  --main-brown: #5a371e;
-  --main-pink: #ff8aab;
-  --main-white: #fff;
-  --main-yellow: #fffe8d;
+
+  /* z-index */
+  --z-base: 0;
+  --z-deco01: 1;
+  --z-deco02: -1;
+  --z-cont: 10;
+  --z-top: 100;
+
+  /* transition */
+  --transition-normal: all .3s ease;
   }
 
 .sr-only {
